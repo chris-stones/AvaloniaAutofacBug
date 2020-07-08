@@ -1,0 +1,20 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:AvaloniaAutofacBug.ViewModels;assembly=AvaloniaAutofacBug"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaAutofacBug.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaAutofacBug">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+  <StackPanel>
+    <Button Command="{Binding OnDontCrashClick}" Content="I Dont Crash"/>
+    <Button Command="{Binding OnDoCrashClick}" Content="I Do Crash!"/>
+  </StackPanel>
+  
+</Window>
