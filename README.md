@@ -64,3 +64,14 @@ public class MainWindowViewModel : ViewModelBase
   
 </Window>
 ```
+
+`Nuget packages`
+```csproj
+<ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="Avalonia" Version="0.9.11" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.11" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.11" />
+    <PackageReference Include="Splat.Autofac" Version="9.0.5" />
+  </ItemGroup>
+```
