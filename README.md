@@ -11,6 +11,11 @@ The same happens under Windows10, and ArchLinux. Both using .NET Core 3.1.
 
 `MainWindowViewModel.cs`
 ```cs
+using ReactiveUI;
+using System.Reactive;
+using Autofac;
+using Splat.Autofac;
+
 public class MainWindowViewModel : ViewModelBase
     {
         public ReactiveCommand<Unit, Unit> OnDontCrashClick { get; }
